@@ -118,7 +118,7 @@ export default function Home() {
         </div>
         
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight break-words">
             NRK-ENGINEERING-WORKS
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light">

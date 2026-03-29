@@ -29,8 +29,8 @@ function Navigation() {
               <img src="/images/projects/logo.png" alt="NRK Logo" className="w-full h-full object-contain" />
             </div>
             <div>
-              <div className="text-white font-bold text-xl uppercase tracking-wider">NRK ENGINEERING WORKS</div>
-              <div className="text-gray-400 text-xs">Fabrication Management</div>
+              <div className="text-white font-bold text-sm sm:text-base md:text-xl uppercase tracking-wider leading-tight">NRK ENGINEERING WORKS</div>
+              <div className="text-gray-400 text-[10px] sm:text-xs">Fabrication Management</div>
             </div>
           </Link>
 
@@ -100,13 +100,13 @@ function Footer() {
                 <img src="/images/projects/logo.png" alt="NRK Logo" className="w-full h-full object-contain" />
               </div>
               <div>
-                <div className="text-white font-bold text-xl uppercase tracking-wider">NRK-ENG-WORKS</div>
+                <div className="text-white font-bold text-lg sm:text-xl uppercase tracking-wider break-words">NRK-ENG-WORKS</div>
                 <div className="text-gray-400 text-xs">Quality Metalwork</div>
               </div>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-sm sm:text-base">
               Professional engineering and fabrication services with over 20 years of experience. 
-              We specialize in Vibrating-Screens,Grizzly-Feeders,Jaw-Crusher Maintanance,Vibrating-Feeder,Supporting Structures,Steel Ramps,Conveyor-Systems,Roller-Frames and Crusher-Parts.
+              We specialize in Vibrating-Screens, Grizzly-Feeders, Jaw-Crusher Maintenance, Vibrating-Feeder, Supporting Structures, Steel Ramps, Conveyor-Systems, Roller-Frames and Crusher-Parts.
             </p>
           </div>
 
@@ -124,12 +124,12 @@ function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-white font-bold mb-4">Contact</h3>
-            <div className="flex flex-col gap-2 text-gray-400">
+            <div className="flex flex-col gap-2 text-gray-400 text-sm sm:text-base break-words">
               <p>+91 8500193091</p>
               <p>+91 7396881999</p>
               <p>nrkengworkshyd@gmail.com</p>
-              <p>Near Jaibery colony,Kompally,Hyderabad,Kaziguda,Telangana,500100</p>
-              <p>GFR9+F75 Hyderabad,Telangana,India</p>
+              <p>Near Jaibery colony, Kompally, Hyderabad, Kaziguda, Telangana, 500100</p>
+              <p>GFR9+F75 Hyderabad, Telangana, India</p>
             </div>
           </div>
         </div>
@@ -145,9 +145,9 @@ function Footer() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         <Navigation />
-        <main className="pt-20">{children}</main>
+        <main className="pt-20 overflow-x-hidden">{children}</main>
         <Footer />
         
         {/* WhatsApp Floating Button */}
