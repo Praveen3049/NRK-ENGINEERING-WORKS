@@ -17,6 +17,10 @@ module.exports = {
     		}
     	},
     	extend: {
+            fontFamily: {
+                sans: ["var(--font-inter)"],
+                display: ["var(--font-archivo)"],
+            },
     		colors: {
     			border: 'hsl(var(--border))',
     			input: 'hsl(var(--input))',
