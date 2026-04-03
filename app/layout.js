@@ -153,6 +153,11 @@ function Footer() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/images/projects/logo.png" />
+        <title>NRK Engineering Works | Custom Fabrication</title>
+        <meta name="description" content="Professional engineering and fabrication services with over 20 years of experience." />
+      </head>
       <body className={`${inter.variable} ${archivo.variable} font-sans bg-black text-white overflow-x-hidden w-full`}>
         <Navigation />
         <main className="pt-20 overflow-x-hidden">{children}</main>

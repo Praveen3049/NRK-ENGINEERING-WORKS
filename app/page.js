@@ -173,14 +173,20 @@ export default function Home() {
                   are not only functional but also aesthetically pleasing.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-8 mt-12">
-                <div className="text-center p-6 bg-black/30 rounded-lg border border-white/5">
-                  <div className="text-4xl font-bold text-yellow-500 mb-2">20+</div>
-                  <div className="text-gray-400 font-medium">Years Experience</div>
+              <div className="grid grid-cols-2 gap-6 mt-12">
+                <div className="group p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300">
+                  <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center text-yellow-500 mb-4 group-hover:scale-110 transition-transform">
+                    <Clock className="w-6 h-6" />
+                  </div>
+                  <div className="text-4xl font-display font-bold text-white mb-1">20+</div>
+                  <div className="text-gray-400 text-sm font-medium uppercase tracking-wider">Years Experience</div>
                 </div>
-                <div className="text-center p-6 bg-black/30 rounded-lg border border-white/5">
-                  <div className="text-4xl font-bold text-yellow-500 mb-2">300+</div>
-                  <div className="text-gray-400 font-medium">Projects Done</div>
+                <div className="group p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300">
+                  <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center text-yellow-500 mb-4 group-hover:scale-110 transition-transform">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  <div className="text-4xl font-display font-bold text-white mb-1">300+</div>
+                  <div className="text-gray-400 text-sm font-medium uppercase tracking-wider">Projects Done</div>
                 </div>
               </div>
             </motion.div>
