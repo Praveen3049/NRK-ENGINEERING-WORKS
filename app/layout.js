@@ -155,8 +155,20 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/images/projects/logo.png" />
-        <title>NRK Engineering Works | Custom Fabrication</title>
-        <meta name="description" content="Professional engineering and fabrication services with over 20 years of experience." />
+        <title>NRK Engineering Works | Engineering & Fabrication in Hyderabad</title>
+        <meta name="description" content="Professional engineering and fabrication services in Hyderabad. Experts in Vibrating-Screens, Crusher maintenance, and custom steel fabrication with 20+ years of experience." />
+        <meta name="keywords" content="NRK Engineering Works, Engineering Works Hyderabad, Crusher spare parts fabrication, Steel structure fabrication Hyderabad, Sand washing plants, Custom metalwork, Vibrating screens maintenance, Industrial fabrication, Hyderabad metal works" />
+        <meta name="author" content="NRK Engineering Works" />
+        
+        {/* Open Graph / Social Media */}
+        <meta property="og:title" content="NRK Engineering Works | Custom Fabrication & Engineering" />
+        <meta property="og:description" content="Quality Metalwork and Industrial Fabrication Services in Hyderabad. 20+ Years of Experience." />
+        <meta property="og:image" content="/images/projects/logo.png" />
+        <meta property="og:type" content="website" />
+        
+        {/* Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="theme-color" content="#000000" />
       </head>
       <body className={`${inter.variable} ${archivo.variable} font-sans bg-black text-white overflow-x-hidden w-full`}>
         <Navigation />
