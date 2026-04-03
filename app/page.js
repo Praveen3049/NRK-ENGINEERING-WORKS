@@ -227,14 +227,14 @@ export default function Home() {
           >
             {services.map((service, index) => (
               <motion.div key={index} variants={fadeIn}>
-                <Card className="bg-zinc-900 border-zinc-800 hover:border-yellow-500 transition-all duration-300 h-full group hover:-translate-y-2">
+                <Card className="bg-zinc-900/50 border-zinc-800 hover:border-yellow-500/50 hover:shadow-[0_0_30px_-10px_rgba(234,179,8,0.3)] transition-all duration-500 h-full group hover:-translate-y-3">
                   <CardContent className="p-6">
-                    <div className="text-yellow-500 mb-4 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
-                    <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-                    <p className="text-gray-400 mb-4 text-sm leading-relaxed">{service.description}</p>
-                    <ul className="space-y-2">
+                    <div className="text-yellow-500 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">{service.icon}</div>
+                    <h3 className="text-xl font-display font-bold text-white mb-3 group-hover:text-yellow-500 transition-colors duration-300">{service.title}</h3>
+                    <p className="text-gray-400 mb-6 text-sm leading-relaxed">{service.description}</p>
+                    <ul className="space-y-3">
                       {service.features.map((f, i) => (
-                        <li key={i} className="text-gray-500 text-xs flex items-center gap-2">
+                        <li key={i} className="text-gray-500 text-xs flex items-center gap-2 group-hover:text-gray-300 transition-colors duration-300">
                           <CheckCircle className="w-3 h-3 text-yellow-500" /> {f}
                         </li>
                       ))}
@@ -276,18 +276,18 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 key={index} 
-                className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer ring-1 ring-white/5"
+                className="group relative aspect-square overflow-hidden rounded-xl cursor-pointer ring-1 ring-white/10 hover:ring-yellow-500/50 transition-all duration-500"
                 onClick={() => setSelectedImage(item)}
               >
                 <img
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0">
-                  <p className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-1">{item.category}</p>
-                  <h3 className="text-white font-bold text-xl">{item.title}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0">
+                  <p className="text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] mb-2">{item.category}</p>
+                  <h3 className="text-white font-display font-bold text-2xl">{item.title}</h3>
                 </div>
               </motion.div>
             ))}
@@ -351,11 +351,11 @@ export default function Home() {
                   { icon: <MapPin />, title: 'Location', content: ['Kaziguda, Kompally', 'Hyderabad, Telangana'] },
                   { icon: <Clock />, title: 'Hours', content: ['Mon-Sat: 8AM-6PM'] },
                 ].map((item, i) => (
-                  <Card key={i} className="bg-zinc-900 border-zinc-800 hover:border-yellow-500 transition-all group">
+                  <Card key={i} className="bg-zinc-900/50 border-zinc-800 hover:border-yellow-500/50 hover:shadow-[0_0_20px_-10px_rgba(234,179,8,0.2)] transition-all duration-500 group overflow-hidden">
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="text-yellow-500 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                      <div className="text-yellow-500 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500">{item.icon}</div>
                       <div>
-                        <h3 className="text-white font-bold mb-1 text-sm">{item.title}</h3>
+                        <h3 className="text-white font-display font-bold mb-1 text-sm group-hover:text-yellow-500 transition-colors duration-300">{item.title}</h3>
                         {item.content.map((line, j) => (
                           <p key={j} className="text-gray-400 text-xs">{line}</p>
                         ))}
