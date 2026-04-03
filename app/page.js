@@ -118,7 +118,7 @@ export default function Home() {
         </div>
         
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight break-words">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-bold text-white mb-6 tracking-tight break-words">
             NRK-ENGINEERING-WORKS
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light">
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Story</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-400 text-lg leading-relaxed">
                 <p>
                   With over 20 years of experience in the engineering and fabrication industry, we have established ourselves 
@@ -182,7 +182,7 @@ export default function Home() {
       <section id="services" className="py-24 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Services</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Our Services</h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Comprehensive engineering and fabrication services tailored to your needs
             </p>
@@ -212,7 +212,7 @@ export default function Home() {
       <section id="gallery" className="py-24 px-4 bg-zinc-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Work</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Our Work</h2>
             <div className="flex flex-wrap gap-2 justify-center mt-8">
               {['All', 'Industrial Plants', 'Conveyors', 'Spare Parts', 'Vibrating Screens'].map(cat => (
                 <Button 
@@ -255,7 +255,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form Side */}
             <div>
-              <h2 className="text-4xl font-bold text-white mb-6">Request a Free Quote</h2>
+              <h2 className="text-4xl font-display font-bold text-white mb-6">Request a Free Quote</h2>
               <p className="text-gray-400 mb-8 text-lg">
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>

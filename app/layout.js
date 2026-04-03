@@ -1,13 +1,21 @@
 'use client'
 
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Archivo } from 'next/font/google'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const archivo = Archivo({
+  subsets: ['latin'],
+  variable: '--font-archivo',
+})
 
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -145,7 +153,7 @@ function Footer() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`${inter.variable} ${archivo.variable} font-sans bg-black text-white overflow-x-hidden w-full`}>
         <Navigation />
         <main className="pt-20 overflow-x-hidden">{children}</main>
         <Footer />
