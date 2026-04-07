@@ -22,9 +22,10 @@ function Navigation() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#gallery', label: 'Gallery' }
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'About' },
+    { href: '/gallery', label: 'Projects' },
+    { href: '/contact', label: 'Contact' }
   ]
 
   return (
@@ -53,8 +54,8 @@ function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link href="#quote">
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Link href="/contact">
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold text-xs sm:text-sm">
                 Get Quote
               </Button>
             </Link>
@@ -83,7 +84,7 @@ function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <Link href="#quote" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
                   Get Quote
                 </Button>
@@ -123,9 +124,9 @@ function Footer() {
             <h3 className="text-white font-bold mb-4">Quick Links</h3>
             <div className="flex flex-col gap-2">
               <Link href="/" className="text-gray-400 hover:text-yellow-500 transition-colors">Home</Link>
-              <Link href="#about" className="text-gray-400 hover:text-yellow-500 transition-colors">About Us</Link>
-              <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">Services</Link>
-              <Link href="#gallery" className="text-gray-400 hover:text-yellow-500 transition-colors">Gallery</Link>
+              <Link href="/about" className="text-gray-400 hover:text-yellow-500 transition-colors">About Us</Link>
+              <Link href="/services" className="text-gray-400 hover:text-yellow-500 transition-colors">Services</Link>
+              <Link href="/gallery" className="text-gray-400 hover:text-yellow-500 transition-colors">Projects</Link>
             </div>
           </div>
 
@@ -155,8 +156,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/images/projects/logo.png" />
-        <title>NRK Engineering Works | Engineering & Fabrication in Hyderabad</title>
-        <meta name="description" content="Professional engineering and fabrication services in Hyderabad. Experts in Vibrating-Screens, Crusher maintenance, and custom steel fabrication with 20+ years of experience." />
+        <title>NRK Engineering Works Hyderabad | Welding & Fabrication Services</title>
+        <meta name="description" content="NRK Engineering Works offers professional welding, fabrication, and machining services in Hyderabad. Contact us for reliable industrial solutions." />
         <meta name="keywords" content="NRK Engineering Works, Engineering Works Hyderabad, Crusher spare parts fabrication, Steel structure fabrication Hyderabad, Sand washing plants, Custom metalwork, Vibrating screens maintenance, Industrial fabrication, Hyderabad metal works" />
         <meta name="author" content="NRK Engineering Works" />
         
