@@ -155,7 +155,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/images/projects/logo.png" />
         <title>NRK Engineering Works Hyderabad | Welding & Fabrication Services</title>
         <meta name="description" content="NRK Engineering Works offers professional welding, fabrication, and machining services in Hyderabad. Contact us for reliable industrial solutions." />
         <meta name="keywords" content="NRK Engineering Works, Engineering Works Hyderabad, Crusher spare parts fabrication, Steel structure fabrication Hyderabad, Sand washing plants, Custom metalwork, Vibrating screens maintenance, Industrial fabrication, Hyderabad metal works" />
